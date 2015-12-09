@@ -35,7 +35,7 @@ public class SqlGatewayServlet extends HttpServlet {
                     resultSet.close();
                 } else {
                     int i = statement.executeUpdate(sqlStatement);
-                    if (i == 0) { // a DDL statement
+                    if (i == 0) { 
                         sqlResult = 
                                 "<p>The statement executed successfully.</p>";
                     } else { // an INSERT, UPDATE, or DELETE statement
